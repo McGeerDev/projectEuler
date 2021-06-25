@@ -7,6 +7,10 @@
 //   sum += num;
 // }
 
+// Use 2 for loops;
+// 1 for i+3 increments
+// 1 for i+5 increments
+
 const sum = (num)=>{
   let sum = 0;
   for(let i = 3;i<num;i++){
