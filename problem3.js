@@ -26,10 +26,9 @@ let primeFactors = (num) => { // Divide from the smallest factor, getting larger
 let primes = ()=>{ 
   let primes = [];
   let count = 0;
-  for(var i=1;i<100000;i++){
+  for(var i=1;i<100000;i++){ // If there are not enough prime numbers the primeFactors function returns undefined.
     for(var j=1;j<=i;j++){
-      // console.log(i,j,i%j)
-      if(i%j == 0){
+      if(i%j == 0){ //Count each time the module is 0. Prime numbers only have 2 or less.
         count++;
       }
     }
