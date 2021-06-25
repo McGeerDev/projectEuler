@@ -7,7 +7,7 @@
 //   sum += num;
 // }
 
-// Use 2 for loops;
+// Use 2 for loops;  Possible 2nd solution
 // 1 for i+3 increments
 // 1 for i+5 increments
 
