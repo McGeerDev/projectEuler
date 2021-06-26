@@ -12,7 +12,7 @@
 // This is the first rendition of the answer and should be improved as it is very slow and inefficient.
 
 const primeFactors = (num) => { // Divide from the smallest factor, getting larger until the division equals 1. This is the biggest factor
-  let prime_nums = primes();
+  let prime_nums = primes(100000);
   for(let factor of prime_nums){
     if(num%factor == 0){
       if(num/factor == 1){
@@ -23,10 +23,10 @@ const primeFactors = (num) => { // Divide from the smallest factor, getting larg
   }
 }
 // The primes function creates an array of prime numbers
-const primes = ()=>{ 
+const primes = (limit)=>{ 
   let primes = [];
   let count = 0;
-  for(var i=1;i<100000;i++){ // If there are not enough prime numbers the primeFactors function returns undefined.
+  for(var i=1;i<limit;i++){ // If there are not enough prime numbers the primeFactors function returns undefined.
     for(var j=1;j<=i;j++){
       if(i%j == 0){ //Count each time the module is 0. Prime numbers only have 2 or less.
         count++;
