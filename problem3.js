@@ -11,7 +11,7 @@
 
 // This is the first rendition of the answer and should be improved as it is very slow and inefficient.
 
-let primeFactors = (num) => { // Divide from the smallest factor, getting larger until the division equals 1. This is the biggest factor
+const primeFactors = (num) => { // Divide from the smallest factor, getting larger until the division equals 1. This is the biggest factor
   let prime_nums = primes();
   for(let factor of prime_nums){
     if(num%factor == 0){
@@ -23,7 +23,7 @@ let primeFactors = (num) => { // Divide from the smallest factor, getting larger
   }
 }
 // The primes function creates an array of prime numbers
-let primes = ()=>{ 
+const primes = ()=>{ 
   let primes = [];
   let count = 0;
   for(var i=1;i<100000;i++){ // If there are not enough prime numbers the primeFactors function returns undefined.

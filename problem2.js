@@ -15,7 +15,7 @@
 
 // while curr <= 4 mill
 
-let fibo = () => {
+const fibo = () => {
   let prev = 1;
   let curr = 2;
   let temp,sum=0;
