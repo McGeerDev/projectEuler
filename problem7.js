@@ -10,7 +10,7 @@ const primes = (limit) => {
   let prime;
   for(var i=1;i<limit;i++){ // If there are not enough prime numbers the primeFactors function returns undefined.
     for(var j=1;j<=i;j++){
-      if(i%j == 0){ //Count each time the module is 0. Prime numbers only have 2 or less.
+      if(i%j == 0){ //Count each time the modulo is 0. Prime numbers only have 2 or less.
         count++;
       }
     }
@@ -29,4 +29,4 @@ const primes = (limit) => {
   // return primes;
 }
 
-console.log(  primes(1000000)  )
+console.log(primes(1000000))
