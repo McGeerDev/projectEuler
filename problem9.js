@@ -36,6 +36,8 @@ let a,b,c
   for(let i = 1;i<1000;i++){
     for(let j=i+1;j<1000-i;j++){
       if(isInt(Math.sqrt(Math.pow(i,2)+Math.pow(j,2)))){
+        console.log(i,j,Math.sqrt(Math.pow(i,2)+Math.pow(j,2)),i+j+Math.sqrt(Math.pow(i,2)+Math.pow(j,2)));
+
         if((i+j+Math.sqrt(Math.pow(i,2)+Math.pow(j,2))) == 1000){
           console.log(i,j,Math.sqrt(Math.pow(i,2)+Math.pow(j,2)),'Success');
           a = i;
@@ -47,7 +49,9 @@ let a,b,c
   }
   return a*b*c;
 }
-
 console.log(disgustingBruteForce());
+
+
+//parametrisation method
 
 
